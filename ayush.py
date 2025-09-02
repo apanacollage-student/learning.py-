@@ -90,3 +90,6 @@ print("the average of these two number is ",a+b/2)
 # write a python program to calculate the square
 a=int(input("enter number:"))
 print ("the square of the number is", a*2)
+a=1
+b=2
+print=a+b
