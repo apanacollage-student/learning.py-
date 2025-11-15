@@ -50,3 +50,33 @@ print(c)
 d=len(a)
 print(d)
  
+# write a program to store seven fruits in a list entered by the user
+fruits=[]
+for i in range(1,8):
+    fruit=input("enter the name of fruit:")
+    fruits.append(fruit)
+print(fruits)
+
+
+#type of tupple
+a=(7,0,8,0,0,9)
+a[5]
+n=type(a,)
+
+print(n)
+
+
+#sum of list 4 numbers
+numbers=[10,2,3,4]
+sum=0
+for i in numbers:
+    sum=sum+i
+print(sum)
+
+# count the number of zero in following tuple``
+a=(7,0,8,0,0,9)
+b=a.count(0)
+print(b)
+
+
+
