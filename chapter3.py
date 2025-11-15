@@ -11,3 +11,4 @@ print(name[-4:-1]) #-4=1 and -1=4
 #slicing with skiping value
 a="amazing"
 a=[1,7,3] #ye terminal pe use karo
+ NM
