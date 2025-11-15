@@ -1,3 +1,7 @@
+# write a probram to ccreate a dictionary of hindi 
+# words with values as their engish translations provide user with an option
+# to look up a word
+
 words = {
     "namaste": "hello",
     "dost": "friend",
@@ -98,8 +102,11 @@ words = {
     "peela": "yellow",
     "hara": "green",
     "zindagi": "life",
-    "marg": "death"
+    "mohabbat": "love",
 }
 words_input = input("welcome ayush hindi and english dictionary:",)
-print("the meaning of word is: ", words.get(words_input, "word processing in dictionary"))
-print("the meaning of word is: ", words.get(words_input, "word not found in dictionary"))
+print("the meaning of your word is:", words.get(words_input, "word not procesing in dictionary"))
+
+# 2 question = input eight number from user and display all the unique numbers
+s=[]
+
