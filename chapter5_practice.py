@@ -108,5 +108,38 @@ words_input = input("welcome ayush hindi and english dictionary:",)
 print("the meaning of your word is:", words.get(words_input, "word not procesing in dictionary"))
 
 # 2 question = input eight number from user and display all the unique numbers
-s=[]
+s=set()
+for i in range(1,8):
+    s.add(int(input("enter the number:")))
+print("the unique numbers are:", s)
 
+
+# 3 question can we set with interger and string
+# yes we can create sets with interger and string both
+s=set()
+s.add(18)
+s.add("18")
+print(s, type(s))
+
+
+# 4 question what will be lenth of following sets
+s=set()
+s.add(20)
+s.add(20.0)   # same value hai interger and float ka than ye data type ko ignore kar dega
+s.add("20")
+print(s, len(s))
+
+# 5 question {} what is the type of this
+a={}
+print(type(a))
+
+# create an empty dictionary allow 4 user to enter their fevorite language as value use 
+# key as their name assume the names are unique
+
+l={}
+for i in range(1,5):
+ name =input("enter your name:")
+ lang=input("enter your fevorite language:")
+ l.update({name:lang})  # es me name or lang ake pair me add ho jaaye ga
+  #ex :name=ayush lang=python  => {ayush:python}
+ print(l)

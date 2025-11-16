@@ -78,7 +78,7 @@ a2={2,4,6,8,10}
 print("union " , a1.union(a2))
 
 # intersection of sets common item from both sets
-print("intersection", a1.intersection(a2))
+print("intersection", a1.intersection(a2))                                 
 
 
 
