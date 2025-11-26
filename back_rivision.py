@@ -338,3 +338,52 @@ elif(a<0):
 
 else:
     print("your age is under 18:")
+
+
+
+#check the odd and even number for condition
+a=int(input("enter your number"))
+if(a%2==0):
+    print("this number is even")
+
+else:
+   print ("this is not even number")
+
+
+b=int(input("enter your number:"))
+if(b%2!=0):
+    print("this is odd number")
+
+else:
+    print("this is even number not a odd")
+
+
+    #this is a loop and condition
+    list=[]
+for i in range(0,20):
+    Value=int(input("enter your number:"))
+     
+   
+
+list.append(Value),
+
+if(i%2!=0):
+    print("this is a odd number", )
+print(list,i)
+
+
+
+#CHAPTER 6 PRACTICE SET Q1
+a=int(input("enter your numberA:"));
+b=int(input("enter your numberb:"));
+c=int(input("enter your numberc:"));
+d=int(input("enter your number:"));
+
+if(a>b and a>c and a>d):
+    print("the   grater number is A",a);
+elif(b>a and b>c and b>d):
+    print("the  grater number is b",b);
+elif(c>a and c>b and c>d):
+    print("this  gratest number is c",c);
+elif(d>a and d>b and d>c):
+    print("this grater number is d")

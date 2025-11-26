@@ -1,12 +1,10 @@
-a=int(input("enter your age:"))
-if(a>=18):
-    print("your age is good")
-    print("and good for you")
 
-elif(a<0):
-    print("you enter a not valid age")
-    print("please enter valid age")
+   # post talking about ayush yes ya no 
 
+name=input("enter about you:")
+
+if("ayush" in name.lower()):
+    print("this post about ayush")
 
 else:
-    print("your age is under 18:")
+    print("this post not about ayush")
