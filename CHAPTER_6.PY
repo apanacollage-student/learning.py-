@@ -217,4 +217,13 @@ else:
     print("this post not about ayush")
 
 
+# condition if elif else
+age=int(input("enter your age:"))
+if(age>=20):
+    print("you are 18+:",age)
+
+else:
+    print("you are under the 18tn:")
+
+
 

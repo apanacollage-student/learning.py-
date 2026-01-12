@@ -211,7 +211,7 @@ for i in range(0,8):
 # student marks store karne ke lea
 list=[]
 for i in range(0,8):
-        name=input("enter your name:");
+        name=input("enter your name:")
         list.append(name)
         roll=int(input("enter your roll number:"))
         list.append(roll)
@@ -387,3 +387,48 @@ elif(c>a and c>b and c>d):
     print("this  gratest number is c",c);
 elif(d>a and d>b and d>c):
     print("this grater number is d")
+
+
+
+# question my mind user enter name and rool and get marks
+name1="ayush"
+roll1=15
+marks1=95
+
+name2="kumar"
+roll2=12
+marks2=45
+
+name=input("enter your name:")
+roll=int(input("emter your roll:"))
+
+if(name==name1 and roll==roll1):
+    print("your marks",marks1)
+
+elif(name==name2 and roll==roll2):
+    print("your marks",marks2)
+
+else:
+    print("data not pound")
+
+
+ #write a program to calculate the grade of a student from his marks from the flowwing scheme
+
+marks=int(input("enter your marks:"))
+if(marks<100 and marks>90):
+    grade="excelent"
+    print("your grade is:",grade)
+elif(marks<90 and marks>80):
+    grade="a"
+    print("your grade is:",grade)
+elif(marks<80 and marks>70):
+    grade="b"
+    print("your grade is:",grade)
+    
+#7 WRITE A PROGRAM TO FIND OUT WHETHER A GIVEN PAST TALKING ABOUT "ME"
+me="ayush"
+name=input("enter about me:")
+
+if("ayush" in me.lower()):
+    print("this this all about me")
+

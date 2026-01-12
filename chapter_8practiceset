@@ -1,0 +1,23 @@
+# practice set in python chapter 8
+# write a program using function to find gretest of three number
+def gratest(a,b,c):
+    if(a>b and a>c):
+        return a
+    elif(b>a and b>c):
+        return b
+    elif(c>a and c>b):
+        return c
+a=int(input("enter number:a="))
+b=int(input("enter number:b="))
+c=int(input("enter number:c="))
+print(gratest(a,b,c))
+
+
+# practice set in python chapter 8
+#write a python progrm using function to convert celsius to fahreheit
+"""formula is=5*(f-32)/9"""
+def f_to_c(f):
+    return 5*(f-32)/9
+f=int(input("enter temperature in f:"))
+print(f"{f_to_c(f)}c")
+
