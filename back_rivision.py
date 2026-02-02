@@ -432,3 +432,27 @@ name=input("enter about me:")
 if("ayush" in me.lower()):
     print("this this all about me")
 
+
+#@@@@@@@@@@@@@@@@@@@loop@@@@@@@@@@@@@@@@
+
+#jaha tak lenth hain yaha tak print kare ga
+num=[1,4,9,16,25,36,49,64,81,100]
+indx=0
+while indx < len(num):
+    print(num[indx],indx)
+    indx+=1
+
+# index serch in tuple using while loop
+num=(1,4,9,16,25,36,49,64,84,100)
+x=36
+i=0
+while i<len(num):
+    if (num[i]==36):
+        print("found indx",i)
+        break # break ke baad search nahi kare ga
+    else:
+        print("founding...")
+    i+=1
+
+
+

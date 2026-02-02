@@ -95,3 +95,12 @@ def factorial(n):
 a=int(input("enter your number:"))
 print("the factorial of number is:",factorial(a))
 
+######print a new line in python###########
+
+print("ayush")
+print(500)
+print("one-hundred:",end="")
+print(100,end="")
+
+
+

@@ -14,7 +14,7 @@ display = tk.Entry(
     bd=0,
     relief="flat",
     justify="right",
-    bg="#252526",
+    bg="#0A0A90",
     fg="white"
 )
 display.pack(fill="x", ipady=20, padx=10, pady=10)
@@ -36,10 +36,10 @@ def calculate():
         display.insert(0, "Error")
 
 # Buttons frame
-btn_frame = tk.Frame(app, bg="#1e1e1e")
+btn_frame = tk.Frame(app, bg="#8f8f09")
 btn_frame.pack(expand=True, fill="both")
 
-# Button layout
+# Button layout 
 buttons = [
     ("7",1,0), ("8",1,1), ("9",1,2), ("/",1,3),
     ("4",2,0), ("5",2,1), ("6",2,2), ("*",2,3),

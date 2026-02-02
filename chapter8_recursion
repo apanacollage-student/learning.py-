@@ -5,9 +5,127 @@ print the factroial
 def factorial(n):
     if(n==1 or n==0):
         return 1
+    
     return n*factorial(n-1)
 n=int(input("enter your number:"))
 print(f"the factriol of this number is:",factorial(n))
+ ###############ya######################
+
+'''FAHRENHEIT TO CELSIUS'''
+def fc(f):
+    return 5 * (f - 32) / 9
+
+f = float(input("Enter temperature in Fahrenheit: "))
+print(f"Temperature in Celsius: {fc(f)}")
+
+
+################ factorial##############
+def factorial(n):
+    if(n==1 or n==0):
+        return 1
+    return n*factorial(n-1)
+a=int(input("enter your number:"))
+print("the factorial of number is:",factorial(a))
+
+########## find gratest of threee number in fun#######
+
+def gratest(a,b,c):
+    if(a>b and a>c):
+        return "a"
+    elif(b>a and b>c):
+        return "b"
+    elif(c>a and c>b):
+        return "c"
+
+a=int(input("enter your number:"))
+b=int(input("enter your number:"))
+c=int(input("enter your number:"))
+print("gratest:",gratest(a,b,c))
+
+#,,,,,,,most-important,,,,,,
+# Celsius to Fahrenheit
+
+#ctof
+def ctof(c):
+    return c* 9/5 +32
+c=float(input("enter your temprature in C:"))
+print(f"{ctof(c)} F")
+
+#ftoc
+def ftoc(f):
+    return 5*(f-32)/9
+f=int(input("enter your temprature in F:"))
+print(f"{ftoc(f)} c")
 
 
 
+
+##################revbision###################
+# ctof
+def ctof(c):
+    return c* 9/5 +32
+c=float(input("enetr your temprature in c:"))
+print(f"{ctof(c)} f")
+
+#ftoc
+def ftoc(f):
+    return 5*( f-32)/9
+f=int(input("enter your temprature in f:"))
+print(f"{ftoc(f)} c")
+
+#factorial
+def factorial(n):
+    if n==1 or n==0:
+        return 1
+    return n*factorial(n-1)
+n=int(input("enter your number"))
+print(f"{factorial(n)}\tthis is your factorial")
+##############END##################################
+
+
+####
+#####write a recursion function to calculate  the sum of the firt nutural number
+"""ex
+    sum(n)=1+2+3+4+5........n
+    sum(1)=1
+    sum(2)=1+2
+    sum(3)=1+2+3
+    sum(4)=1+2+3+4
+    """
+"""formula=sum(n-1)+n
+"""
+def sum(n):
+    if(n==1):
+        return 1
+    return sum(n-1)+n
+n=int(input("enter your number"))
+print(f"your n number sum is{sum(n)}")
+
+##############################################
+"""write a python function to print first n line of the following pattern"""
+
+"""
+****   for n=4
+***
+**
+*
+"""
+def pattern(n):
+    if(n==1):
+        return 0
+    print("*"*n)
+    pattern(n-1)
+pattern(4)
+ #######optional##########
+n=int(input("enter"))
+def p(n):
+    for i in range(n,0,-1):
+        print("*" *i)
+p(n)
+
+###########
+# write a program in python use to function and convert inches to cms
+def inchtocm(inch):
+    return inch*2.54
+n=int(input("enter your inche:"))
+print(f"this is your cm{inchtocm(n)}")

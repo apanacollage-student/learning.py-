@@ -21,3 +21,14 @@ def f_to_c(f):
 f=int(input("enter temperature in f:"))
 print(f"{f_to_c(f)}c")
 
+
+#recursion is a call itself its direct use mathametic formula
+"""formula like
+print the factroial
+                 n*factorial(n-1)"""
+def factorial(n):
+    if(n==1 or n==0):
+        return 1
+    return n*factorial(n-1)
+n=int(input("enter your number:"))
+print(f"the factriol of this number is:",factorial(n))
