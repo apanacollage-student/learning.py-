@@ -221,6 +221,20 @@ for i in range(0,8):
 
 
 # dictionary are store data in key value pair
+marks={}
+for i in range(5):
+    name=input("enter your name:")
+  
+    roll=int(input('enter roll number:'))
+ 
+    mark=int(input("enter your mark:"))
+    marks[name]={"roll":roll, "marks":mark}
+
+    print(marks)
+
+
+
+
 
 dict={
     "name":"ayush-yadav",	
@@ -414,16 +428,20 @@ else:
 
  #write a program to calculate the grade of a student from his marks from the flowwing scheme
 
-marks=int(input("enter your marks:"))
-if(marks<100 and marks>90):
-    grade="excelent"
-    print("your grade is:",grade)
-elif(marks<90 and marks>80):
-    grade="a"
-    print("your grade is:",grade)
-elif(marks<80 and marks>70):
-    grade="b"
-    print("your grade is:",grade)
+marks = int(input("Enter your marks: "))
+
+if marks >= 90 and marks <= 100:
+    print("Your grade is: Excellent")
+
+elif marks >= 80 and marks < 90:
+    print("Your grade is: A")
+
+elif marks >= 70 and marks < 80:
+    print("Your grade is: B")
+
+else:
+    print("Fail or Invalid marks")
+
     
 #7 WRITE A PROGRAM TO FIND OUT WHETHER A GIVEN PAST TALKING ABOUT "ME"
 me="ayush"
