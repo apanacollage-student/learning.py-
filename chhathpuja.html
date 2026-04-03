@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chhath Puja 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+nav h2{
+    color:#facc15;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to top, #0f172a, #1e293b);
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#facc15;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:#cbd5f5;
+}
+
+/* Button */
+.btn{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#facc15;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Card Section */
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    width:260px;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#facc15;
+    margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:40px;
+}
+
+/* Popup */
+.popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.popup.active{
+    transform:translate(-50%,-50%) scale(1);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Chhath Puja</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Rituals</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div>
+        <h1>🌅 Happy Chhath Puja</h1>
+        <p>May Surya Dev bless you with health, happiness and prosperity</p>
+        <button class="btn" onclick="openPopup()">Get Blessings</button>
+    </div>
+</section>
+
+<!-- Info Section -->
+<section class="section">
+    <h2>About Chhath Puja</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌞 Surya Worship</h3>
+            <p>Devotees worship Sun God for energy and life.</p>
+        </div>
+        <div class="card">
+            <h3>🙏 Chhathi Maiya</h3>
+            <p>Goddess protects children and family.</p>
+        </div>
+        <div class="card">
+            <h3>🌊 Holy Rituals</h3>
+            <p>Offer prayers near rivers during sunrise & sunset.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Chhath Puja | Made with ❤️</p>
+</footer>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <h2>🙏 Jai Chhathi Maiya 🙏</h2>
+    <p>Stay blessed always ✨</p>
+    <button class="btn" onclick="closePopup()">Close</button>
+</div>
+
+<script>
+function openPopup(){
+    document.getElementById("popup").classList.add("active");
+}
+
+function closePopup(){
+    document.getElementById("popup").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

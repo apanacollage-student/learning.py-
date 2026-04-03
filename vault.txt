@@ -1,0 +1,12 @@
+student={
+   157:{"name":"ayush","marks":500},
+   146:{"name":"bobby","marks":510},
+   163:{"name":"karan","marks":5101}
+
+}
+roll=int(input("enter your roll:"))
+if roll in student:
+    print("name",student[roll]["name"])
+    print("marks",student[roll]["marks"])
+else:
+    print("somthing wrong!")
