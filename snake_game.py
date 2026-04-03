@@ -67,6 +67,7 @@ else:
     # Agar koi unexpected error aaye
     else:
         print("Something went wrong!")
+<<<<<<< HEAD
 
 
 
@@ -98,3 +99,5 @@ elif computer==1 and you==-1:
     print("you lose")
 else:
     print("you win")
+=======
+>>>>>>> f22a2009b2067ab9b983d04a5940d6c95ce9cf15

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 student={
    157:{"name":"ayush","marks":500},
    146:{"name":"bobby","marks":510},
@@ -10,3 +11,6 @@ if roll in student:
     print("marks",student[roll]["marks"])
 else:
     print("somthing wrong!")
+=======
+a | 1
+>>>>>>> f22a2009b2067ab9b983d04a5940d6c95ce9cf15
